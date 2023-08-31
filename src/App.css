@@ -4,6 +4,9 @@
     font-family: "Poppins" sans-serif;
   }
 /**************NAVBAR STYLE****************/
+nav{
+  z-index: 2;
+}
 .logo{
   width: 3.125rem;
   height: 2.8125rem;
@@ -16,7 +19,7 @@ nav ul li{
   text-transform: uppercase;
 }
 .navbar-nav > li > a {
-  color: #ffffff;
+  color: black;
   margin-right: 0.75rem;
   margin-left: 0.75rem;
 }
@@ -25,4 +28,65 @@ nav ul li{
 }
 .navbar-nav > li > a:hover{
   border-bottom: 0.125rem solid violet;
+}
+/************Header Styling*************/
+
+.header-wraper{
+  position: relative;
+  background-image: url(background-wall.png);
+  background-size: cover;
+  background-position: center;
+  height: 90vh;
+}
+
+.main-info{
+  display: flex;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  text-transform: uppercase;
+}
+/******for the Typed******/
+
+.typed-text{
+  font-size: 2rem;
+  color: violet;
+}
+
+.btn-main-offer{
+  border: 1px solid #000080;
+  border-radius: 0px;
+  padding: 0.625rem 0.75rem 0.75rem 0.75rem;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #000080;
+}
+.btn-main-offer:hover{
+  transition: .2s ease-in-out;
+  background-color: #000080;
+  color: whitesmoke;
+}
+.teparticles-canvas-el{
+  position: absolute;
+  height: 100vh;
+  width: 100vw;
+  z-index: 1;
+}
+
+@media(max-width: 768px){
+  .main-info h1{
+    font-size: 1.7rem;
+  }
+  .typed-text{
+    font-size: 1.3rem;
+  }
+  .navbar-brand{
+    width: 7rem;
+  }
 }
